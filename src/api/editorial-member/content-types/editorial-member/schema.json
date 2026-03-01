@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "editorial_members",
+  "info": {
+    "singularName": "editorial-member",
+    "pluralName": "editorial-members",
+    "displayName": "Редакцын зөвлөл"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "surname": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "affiliation": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "richtext"
+    },
+    "photo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}
