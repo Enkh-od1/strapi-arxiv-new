@@ -4,7 +4,8 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "Нийтлэл"
+    "displayName": "Нийтлэл",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -27,14 +28,15 @@
       "type": "string"
     },
     "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "category": {
       "type": "relation",
@@ -46,6 +48,12 @@
     },
     "issue": {
       "type": "string"
+    },
+    "country": {
+      "type": "enumeration",
+      "enum": [
+        "Монгол"
+      ]
     }
   }
 }
