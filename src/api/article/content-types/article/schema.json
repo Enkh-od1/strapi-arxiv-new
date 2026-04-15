@@ -4,8 +4,8 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "Нийтлэл",
-    "description": ""
+    "displayName": "Өгүүлэл",
+    "description": "Сэтгүүлийн өгүүлэл хадгалах бүтэц"
   },
   "options": {
     "draftAndPublish": true
@@ -13,47 +13,56 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
+      "type": "string",
+      "required": true
+    },
+    "Title": {
       "type": "string"
     },
-    "summary": {
+    "summary_text": {
+      "type": "text"
+    },
+    "Summary": {
+      "type": "text"
+    },
+    "author_text": {
+      "type": "text"
+    },
+    "works_text": {
+      "type": "text"
+    },
+    "doi": {
+      "type": "string"
+    },
+    "key": {
+      "type": "string"
+    },
+    "Key": {
+      "type": "string"
+    },
+    "customPublishedDate": {
+      "type": "date"
+    },
+    "pages": {
+      "type": "string"
+    },
+    "PageCount": {
+      "type": "string"
+    },
+    "volume": {
+      "type": "string"
+    },
+    "journalName": {
       "type": "string"
     },
     "pdfUrl": {
       "type": "string"
     },
-    "releaseDate": {
-      "type": "date"
-    },
-    "authors": {
-      "type": "string"
-    },
-    "coverImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
-    "category": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "admin::user"
-    },
-    "volume": {
-      "type": "string"
-    },
     "issue": {
-      "type": "string"
-    },
-    "country": {
-      "type": "enumeration",
-      "enum": [
-        "Монгол"
-      ]
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::issue.issue",
+      "inversedBy": "articles"
     }
   }
 }
