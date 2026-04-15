@@ -46,6 +46,9 @@
     "volume": {
       "type": "string"
     },
+    "key": {
+      "type": "string"
+    },
     "issue": {
       "type": "string"
     },
