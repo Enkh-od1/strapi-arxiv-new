@@ -59,10 +59,9 @@
       "type": "string"
     },
     "issue": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::issue.issue",
-      "inversedBy": "articles"
-    }
+  "type": "relation",
+  "relation": "manyToOne",
+  "target": "api::issue.issue"
+}
   }
 }
