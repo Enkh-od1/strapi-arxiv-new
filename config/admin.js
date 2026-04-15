@@ -10,4 +10,8 @@ module.exports = ({ env }) => ({
       salt: env('TRANSFER_TOKEN_SALT'),
     },
   },
+  // Энэ хэсгийг нэмж өгнө:
+  telemetry: {
+    enabled: false,
+  },
 });
